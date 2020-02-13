@@ -1,13 +1,13 @@
 'use strict';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "/index.html": "16561605787413d15839f56b9f10dbd4",
-"/main.dart.js": "8257d6f222732add179e0fc073211a6e",
+  "/index.html": "7af70cf21c6648c86c5714242581eeeb",
+"/main.dart.js": "c314bbdb3a785b293f7bfd3221dbe58b",
 "/favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "/icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "/icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "/manifest.json": "44ec6d536271dcb9da10342fbd0b0ed4",
-"/assets/LICENSE": "98bf0a07ef8a207c62cd41205ae152f5",
+"/assets/LICENSE": "e07e062298f9db180bec0dabc521650e",
 "/assets/AssetManifest.json": "db0a564cc2d952fd8136a214a81727a2",
 "/assets/FontManifest.json": "d949144be194f9cb2adc4c513d70c3a8",
 "/assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "115e937bb829a890521f72d2e664b632",
@@ -51,9 +51,7 @@ self.addEventListener('fetch', function (event) {
         if (response) {
           return response;
         }
-        return fetch(event.request, {
-          credentials: 'include'
-        });
+        return fetch(event.request);
       })
   );
 });
