@@ -1,8 +1,8 @@
 {
-    "name": "BmiCalcSource",
-    "short_name": "BmiCalcSource",
+    "name": "bmicalc",
+    "short_name": "bmicalc",
     "start_url": ".",
-    "display": "minimal-ui",
+    "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
     "description": "A new Flutter project.",
